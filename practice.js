@@ -6,7 +6,7 @@ function sorty(newarr){
     for (i = 0; i < newarr.length; i++) {
     
         if (n > newarr.length -1){
-        
+            console.log(newarr + " return")
             return newarr;
         }
         if (newarr[i] === newarr[n]) {
@@ -39,7 +39,7 @@ function sorty(newarr){
                 
             }
         
-            sorty(newarr)
+             sorty(newarr)
 
             }
 
@@ -58,26 +58,26 @@ function uniqueInOrder(iterable){
     
    if (Array.isArray(iterable))
    {
-     console.log(iterable + " Sort")  
-   //  var newarr = iterable.sort((a, b) => a.localeCompare(b));
-   //  console.log(newarr + " sorted")
+    
      var test = sorty(iterable)
-     console.log(test + " this is test")
      return test
    }
     else
     {
       var newarr = iterable.split("");
-      console.log(newarr)
-      uniqueInOrder(newarr)
+      var test = sorty(newarr)
+     return test
+      //uniqueInOrder(newarr)
     }  
   }
+
   var str1 = "AAAABBBCCDAABBB"
 
   var result = uniqueInOrder(str1)
+  console.log(result)
   
-console.log (result)
 
-  //Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), ['A','B','C','D','A','B'])
+
+//Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), ['A','B','C','D','A','B'])
 
 
