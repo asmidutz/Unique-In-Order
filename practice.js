@@ -67,11 +67,11 @@ function uniqueInOrder(iterable){
     }  
   }
 
-  var str1 = "AAAABBBCCDAABBB"
+  var str1 = "AA"
 
   var result = uniqueInOrder(str1)
   
-
+console.log(result)
 
 
 
