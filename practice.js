@@ -19,13 +19,14 @@ function sorty(newarr){
                 char1 = true
             }
             else {char1 = false}
-            if (character2 === character2.toLowerCase()){
+            if (character2 === character2.toUpperCase()){
                 char2 = true
             }
             else {char2 = false}
 
-            if (char1 != char2){
-            console.log( "Char1 is not equal to char2")
+            if (char1 === char2){
+            console.log(char1 + "   "  + char2)
+            console.log( "Char1 is equal to char2")
             newarr.splice(n,1)
        
             end = newarr.length -1
@@ -57,17 +58,20 @@ function uniqueInOrder(iterable){
    {
     
      var test = sorty(iterable)
+     console.log("return first test")
      return test
    }
     else
     {
       var newarr = iterable.split("");
       var test = sorty(newarr)
+      console.log("return second test " + test)
+      
      return test
     }  
   }
 
-  var str1 = "AA"
+  var str1 = "AAA"
 
   var result = uniqueInOrder(str1)
   
