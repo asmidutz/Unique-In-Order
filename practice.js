@@ -12,7 +12,7 @@ console.log("newarr is " + newarr)
             
             console.log ("newarr = 1 exit function")
             console.log("newarr = " + newarr)
-            return newarr; 
+            return false;
       
         }
         if (n > newarr.length -1){
@@ -71,6 +71,7 @@ console.log("newarr is " + newarr)
         }
         n++
     }
+    return newarr
 }
 function uniqueInOrder(iterable){
         
@@ -91,7 +92,7 @@ function uniqueInOrder(iterable){
     }  
   }
 
-  var str1 = "AAAB"
+  var str1 = "AAA"
   ///var str1 = ['A','A','A']
   var result = uniqueInOrder(str1)
   
