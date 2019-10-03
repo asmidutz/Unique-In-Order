@@ -26,7 +26,6 @@ function sorty(newarr){
 
             if (char1 != char2){
             console.log( "Char1 is not equal to char2")
-           // newarr.push(newarr[n])
             newarr.splice(n,1)
        
             end = newarr.length -1
@@ -53,9 +52,7 @@ function sorty(newarr){
     }
 }
 function uniqueInOrder(iterable){
-    
-    //your code here - remember iterable can be a string or an array
-    
+        
    if (Array.isArray(iterable))
    {
     
@@ -67,17 +64,14 @@ function uniqueInOrder(iterable){
       var newarr = iterable.split("");
       var test = sorty(newarr)
      return test
-      //uniqueInOrder(newarr)
     }  
   }
 
   var str1 = "AAAABBBCCDAABBB"
 
   var result = uniqueInOrder(str1)
-  console.log(result)
   
 
 
-//Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), ['A','B','C','D','A','B'])
 
 
